@@ -7,6 +7,7 @@ function Footer() {
     { to: '/recipe-finder', label: 'Find Recipes' },
     { to: '/recipe-explorer', label: 'Explore' },
     { to: '/favorites', label: 'Favorites' },
+    { to: '/portfolio', label: 'Portfolio' },
     { to: '/about', label: 'About' },
   ]
 

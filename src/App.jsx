@@ -9,6 +9,7 @@ import Favorites from './pages/Favorites.jsx'
 import MealPlanner from './pages/MealPlanner.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
+import Portfolio from './pages/Portfolio.jsx'
 import RecipeDetail from './pages/RecipeDetail.jsx'
 
 const themeStorageKey = 'cooksmart-theme'
@@ -40,6 +41,7 @@ function App() {
           <Route path="/recipe-finder" element={<RecipeFinder />} />
           <Route path="/recipe-explorer" element={<RecipeExplorer />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/meal-planner" element={<MealPlanner />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
