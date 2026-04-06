@@ -1,39 +1,85 @@
 # CookSmart
 
-CookSmart is a React-based web application that helps users discover recipes using ingredients they already have at home.
+CookSmart is a React recipe discovery website that helps users find meals based on ingredients they already have, explore recipes with filters, save favorites, and follow step-by-step cooking instructions in a clean interface.
+
+## Live Website
+
+Hosted on Vercel: [https://cooksmart-react.vercel.app/](https://cooksmart-react.vercel.app/)
+
+## Workflow Diagram
+
+![CookSmart workflow](./docs/workflow.png)
 
 ## Features
 
-- Ingredient based recipe search
-- Recipe explorer with filters
-- Save favorite recipes
-- Step-by-step cooking mode
+- Ingredient-based recipe finder with live suggestions
+- Recipe explorer with instant search and filtering
+- Favorites saved with localStorage
+- Recipe detail pages with cooking mode
 - Dark and light theme toggle
-- Responsive UI
+- Responsive modern UI
 
 ## Tech Stack
 
-- ReactJS
+- React
+- React Router
+- Vite
 - JavaScript
 - HTML
 - CSS
 
-## How it works
+## How It Works
 
-Users can enter available ingredients to discover recipes they can cook immediately.
+1. Users enter ingredients they already have.
+2. CookSmart matches recipes based on available ingredients.
+3. Users can refine recipes through search and filters.
+4. Recipes can be opened in detail view and followed step by step.
+5. Favorite recipes are stored locally for quick access later.
 
-Recipes can also be explored using filters such as cooking time and difficulty.
+## Local Development
 
-Favorites are saved locally using browser storage.
+1. Install dependencies:
 
-Cooking Mode provides step-by-step instructions for distraction-free cooking.
+```bash
+npm install
+```
+
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+3. Create a production build:
+
+```bash
+npm run build
+```
+
+4. Preview the production build locally:
+
+```bash
+npm run preview
+```
 
 ## Project Structure
 
-- Component based architecture
-- Reusable UI components
-- React Router navigation
-- Local state management using hooks
+```text
+src/
+  components/   Reusable UI components
+  data/         Recipe dataset
+  pages/        Route-level pages
+  utils/        Shared search and ingredient helpers
+docs/
+  workflow.png  Workflow diagram
+```
+
+## Highlights
+
+- Shared reusable card, list, and form components
+- Theme support using CSS variables
+- Local state management with React hooks
+- Fast client-side routing with React Router
 
 ## Author
 
